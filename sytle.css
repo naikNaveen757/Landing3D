@@ -179,15 +179,20 @@ main {
 }
 
 .btn-signing-main {
+
+
+
     text-decoration: none;
     background-color: lightgray;
     color: black;
+
     padding: 0.7rem 1.2rem;
     border-radius: 50px;
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.1em;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, ;
+
 
 }
 
@@ -209,19 +214,24 @@ main {
 
 
 /* Tablet view */
-@media (max-width: 1300px) {
+@media (max-width: 1024px) {
     header {
         padding: 1rem 0.5rem;
     }
 
     .content {
         margin-top: 50%;
+        margin-left: 18%;
     }
 
     .robot-3d {
-        left: 30%;
+        left: 21%;
         width: 60%;
         height: 60%;
+    }
+
+    .button {
+        justify-content: center;
     }
 }
 
@@ -246,7 +256,7 @@ main {
     .content {
         margin-top: 25rem;
         max-width: 30rem;
-        margin-left: 10%;
+        margin-left: 16%;
 
     }
 
@@ -266,6 +276,54 @@ main {
 
     .description {
         font-size: 1rem;
+    }
+
+    .button {
+        justify-content: center;
+    }
+
+    .btn-get-started,
+    .btn-signing-main {
+        font-size: 0.7rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-signing {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .content {
+        margin-left: 8%;
+        max-width: 83%;
+    }
+
+    .robot-3d {
+        left: 20%;
+    }
+
+
+    .content h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        letter-spacing: 0.2em;
+    }
+
+    .button {
+        justify-content: center;
     }
 
     .btn-get-started,
